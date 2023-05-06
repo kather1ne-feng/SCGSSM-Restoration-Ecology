@@ -60,6 +60,10 @@ header a {
     padding: 10px;
 }
 
+header a:hover {
+    border: solid 3px #F2F8F2;
+}
+
 header > .leftsideheader {
     display: flex;
     flex-flow: row;
@@ -150,6 +154,54 @@ footer a {
     color: #605C4E;
 }
 
+.buttonbox {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    margin: 5px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #C7C7A6;
+    border-radius: 5px;
+    color: #605C4E;
+    display: inline-block;
+    border: solid 0px #605C4E;
+}
+
+button:hover, button:focus {
+    color: #C7C7A6;
+    background: #605C4E;
+}
+
+.buttondesc {
+    display: flex;
+    flex-flow: column;
+}
+
+.colordesc {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items:center;
+}
+
+.color {
+    margin: 0px auto;
+    display: flex;
+    flex-flow: row wrap;
+    visibility: hidden;
+}
+
+.color img {
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+}
+
 .desc {
     position: relative center;
     text-align: left;
@@ -202,6 +254,7 @@ p {
     .imgbox img{
         width: 100%;
         padding: 0px;
+        margin: 10px 0px;
     }
 
 }
@@ -211,9 +264,6 @@ p {
 path:hover {
     stroke: #494936;
     stroke-width:2px;
-    stroke-linejoin: round;
-    fill: #C7C7A6;
-    fill-opacity: 50%;
     cursor: pointer;
 }
 
