@@ -20,11 +20,15 @@ body {
     height: auto;
     background: #F2F8F2;
 }
+.maptext {
+    width: 1000px;
+}
 
 .imgbox{
     display: flex;
     flex-flow: row;
     align-items:center;
+    justify-content: center;
 }
 
 .caption {
@@ -205,6 +209,7 @@ button:hover, button:focus {
 .desc {
     position: relative center;
     text-align: left;
+
     color: #696969;
     width: 100%;
     padding: 10px 50px 10px 50px;
@@ -293,15 +298,20 @@ path:hover {
         width: 100%;
         padding: 0px;
     }
-    .mapbox {
-        flex-flow: column;
-    }
-
     .text {
         flex-flow: column;
     }
 
     .textcol {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .mapbox {
+        flex-flow: column;
+    }
+    .maptext{
         width: 100%;
     }
 }

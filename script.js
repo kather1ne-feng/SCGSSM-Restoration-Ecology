@@ -74,19 +74,19 @@ $('#evennessButton').click(function(){
   clicked = true;
 
     $(pathlist).each(function() {
-    if ($(this).attr('evenness') > 0.7974) {
+    if ($(this).attr('evenness') > 0.796) {
       $(this).css('fill', evennessA);
       $(this).css('fill-opacity', 1);
     }
-    else if ($(this).attr('evenness') > 0.7178) {
+    else if ($(this).attr('evenness') > 0.711) {
       $(this).css('fill', evennessB);
       $(this).css('fill-opacity', 1);
     }
-    else if ($(this).attr('evenness') > 0.6382) {
+    else if ($(this).attr('evenness') > 0.689) {
       $(this).css('fill', evennessC);
       $(this).css('fill-opacity', 1);
     }
-    else if ($(this).attr('evenness') > 0.5586) {
+    else if ($(this).attr('evenness') > 0.558) {
       $(this).css('fill', evennessD);
       $(this).css('fill-opacity', 1);
     }
@@ -102,32 +102,32 @@ $('#evennessButton').click(function(){
   $('#cD').attr("src", 'assets/eD.png');
   $('#cE').attr("src", 'assets/eE.png');
 
-  $('#tA').html("0.877-0.7975");
-  $('#tB').html("0.7974-0.7179");
-  $('#tC').html("0.7178-0.6383");
-  $('#tD').html("0.6382-0.5587");
-  $('#tE').html("0.5586-0.479");
+  $('#tA').html("0.877-0.797");
+  $('#tB').html("0.796-0.712");
+  $('#tC').html("0.711-0.690");
+  $('#tD').html("0.689-0.558");
+  $('#tE').html("0.557-0.479");
 
-  $("#datadesc").html("Species evenness describes the distribution of abundance across species in a particular plot section.");
+  $("#datadesc").html("Species evenness describes the distribution of relative species in a particular plot section. Evenness ranges from 0-1, with 0 meaning there is no evenness and 1 meaning complete evenness. Complete evenness is where all species share the same relative proportion.");
   $('.color').css('visibility', 'visible');
 });
 
 $('#diversityButton').click(function(){
 clicked = true;
     $(pathlist).each(function() {
-    if ($(this).attr('diversity') > 2.0989) {
+    if ($(this).attr('diversity') > 2.089) {
       $(this).css('fill', diversityA);
       $(this).css('fill-opacity', 1);
     }
-    else if ($(this).attr('diversity') > 1.8886) {
+    else if ($(this).attr('diversity') > 1.890) {
       $(this).css('fill', diversityB);
       $(this).css('fill-opacity', 1);
     }
-    else if ($(this).attr('diversity') > 1.6784) {
+    else if ($(this).attr('diversity') > 1.685) {
       $(this).css('fill', diversityC);
       $(this).css('fill-opacity', 1);
     }
-    else if ($(this).attr('diversity') > 1.4682) {
+    else if ($(this).attr('diversity') > 1.467) {
       $(this).css('fill', diversityD);
       $(this).css('fill-opacity', 1);
     }
@@ -143,13 +143,13 @@ clicked = true;
   $('#cD').attr("src", 'assets/dD.png');
   $('#cE').attr("src", 'assets/dE.png');
 
-  $('#tA').html("2.309-2.0989");
-  $('#tB').html("2.0989-1.8887");
-  $('#tC').html("1.8886-1.6784");
-  $('#tD').html("1.6783-1.4682");
-  $('#tE').html("1.4681-1.258");
+  $('#tA').html("2.309-2.090");
+  $('#tB').html("2.089-1.891");
+  $('#tC').html("1.890-1.686");
+  $('#tD').html("1.685-1.468");
+  $('#tE').html("1.467-1.258");
 
-  $("#datadesc").html("The Shannon Diversity Index describes the diversity of species in a particular plot section. It combines species richness and evenness.");
+  $("#datadesc").html("The Shannon Diversity Index describes the diversity of species in a particular plot section. It combines species richness and evenness. The higher the index value is, the more diverse a community is.");
 
   $('.color').css('visibility', 'visible');
 });
