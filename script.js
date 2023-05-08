@@ -65,7 +65,7 @@ $('#richnessButton').click(function(){
   $('#tD').html("13-11");
   $('#tE').html("10-7");
 
-  $("#datadesc").html("Species richness describes the number of species in the particular plot section.");
+  $("#datadesc").html("Species richness describes the number of species in the particular plot section. This number ranges from 7 to 22 different types of plants in each sub-plot.");
 
   $('.color').css('visibility', 'visible');
 });
