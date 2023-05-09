@@ -206,38 +206,3 @@ $("path").hover(function(e) {
       return false;
     });
   }
-
-
-// var color1 = '#';
-// var color2 = '#';
-// var color3 = '#';
-// var color4 = '#';
-// var color5 = '#';
-// var color6 = '#';
-// var color7 = '#';
-
-//   $("#densitybutton").on("click", function(){
-
-//     $(pathlist).each(function() {
-//       var currentpath = $(this).attr("id");
-//       var pathdensity = $(this).attr("density");
-//       var densitycolor = color1;
-//       if (density > 10){
-//         densitycolor = color7;
-//       } else if (density > 8){
-//         densitycolor = color6;
-//       } else if (density > 6){
-//         densitycolor = color5;
-//       } else if (density > 4){
-//         densitycolor = color4;
-//       } else if (density > 2){
-//         densitycolor = color3;
-//       } else if (density > 0){
-//         densitycolor = color2;
-//       } else {
-//         densitycolor = color1;
-//       }
-//       $(this).css('fill', densitycolor);
-//     });
-//   });
-
