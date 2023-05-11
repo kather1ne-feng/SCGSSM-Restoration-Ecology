@@ -1,1 +1,0 @@
-# SCGSSM-Restoration-Ecology

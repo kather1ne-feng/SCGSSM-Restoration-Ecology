@@ -2,28 +2,25 @@ var pathlist = $("svg").find("path");
 $(pathlist).each(function() {
     $(this).css('fill', '#0000ffff');
     $(this).css('fill-opacity', 0);
-    // if ($(this).attr('richness') == 14) {
-    //   $(this).css('fill', 'blue');
-    //   $(this).css('fill-opacity', 1);
-    // }
 });
-var richnessA = "#10007a";
-var richnessB = "#4e2693";
-var richnessC = "#7444a9";
-var richnessD = "#9460bc";
-var richnessE = "#b37bcf";
 
-var evennessA = "#296d51";
-var evennessB = "#4e856f";
-var evennessC = "#719e8e";
-var evennessD = "#97bab1";
-var evennessE = "#bfd8d7";
+var richnessA = "#810f7c";
+var richnessB = "#8856a7";
+var richnessC = "#8c96c6";
+var richnessD = "#b3cde3";
+var richnessE = "#edf8fb";
 
-var diversityA = "#006382";
-var diversityB = "#437b99";
-var diversityC = "#6b94b0";
-var diversityD = "#96b0cb";
-var diversityE = "#c3cfe8";
+var evennessA = "#0868ac";
+var evennessB = "#43a2ca";
+var evennessC = "#7bccc4";
+var evennessD = "#bae4bc";
+var evennessE = "#f0f9e8";
+
+var diversityA = "#b30000";
+var diversityB = "#e34a33";
+var diversityC = "#fc8d59";
+var diversityD = "#fdcc8a";
+var diversityE = "#fef0d9";
 
 var clicked = false;
 
@@ -31,15 +28,15 @@ $('#richnessButton').click(function(){
   clicked = true;
 
   $(pathlist).each(function() {
-    if ($(this).attr('richness') > 19) {
+    if ($(this).attr('richness') > 16) {
       $(this).css('fill', richnessA);
       $(this).css('fill-opacity', 1);
     }
-    else if ($(this).attr('richness') > 16) {
+    else if ($(this).attr('richness') > 14) {
       $(this).css('fill', richnessB);
       $(this).css('fill-opacity', 1);
     }
-    else if ($(this).attr('richness') > 13) {
+    else if ($(this).attr('richness') > 12) {
       $(this).css('fill', richnessC);
       $(this).css('fill-opacity', 1);
     }
@@ -59,11 +56,11 @@ $('#richnessButton').click(function(){
   $('#cD').attr("src", 'assets/rD.png');
   $('#cE').attr("src", 'assets/rE.png');
 
-  $('#tA').html("22-20");
-  $('#tB').html("19-17");
-  $('#tC').html("16-14");
-  $('#tD').html("13-11");
-  $('#tE').html("10-7");
+  $('#tA').html("&gt; 16");
+  $('#tB').html("16-15");
+  $('#tC').html("14-13");
+  $('#tD').html("12-11");
+  $('#tE').html("&#8804; 10");
 
   $("#datadesc").html("Species richness describes the number of species in the particular plot section. This number ranges from 7 to 22 different types of plants in each sub-plot.");
 
@@ -74,19 +71,19 @@ $('#evennessButton').click(function(){
   clicked = true;
 
     $(pathlist).each(function() {
-    if ($(this).attr('evenness') > 0.796) {
+    if ($(this).attr('evenness') > 0.820) {
       $(this).css('fill', evennessA);
       $(this).css('fill-opacity', 1);
     }
-    else if ($(this).attr('evenness') > 0.711) {
+    else if ($(this).attr('evenness') > 0.780) {
       $(this).css('fill', evennessB);
       $(this).css('fill-opacity', 1);
     }
-    else if ($(this).attr('evenness') > 0.689) {
+    else if ($(this).attr('evenness') > 0.720) {
       $(this).css('fill', evennessC);
       $(this).css('fill-opacity', 1);
     }
-    else if ($(this).attr('evenness') > 0.558) {
+    else if ($(this).attr('evenness') > 0.650) {
       $(this).css('fill', evennessD);
       $(this).css('fill-opacity', 1);
     }
@@ -102,11 +99,12 @@ $('#evennessButton').click(function(){
   $('#cD').attr("src", 'assets/eD.png');
   $('#cE').attr("src", 'assets/eE.png');
 
-  $('#tA').html("0.877-0.797");
-  $('#tB').html("0.796-0.712");
-  $('#tC').html("0.711-0.690");
-  $('#tD').html("0.689-0.558");
-  $('#tE').html("0.557-0.479");
+
+  $('#tA').html("&gt; 0.820");
+  $('#tB').html("0.820-0.781");
+  $('#tC').html("0.780-0.721");
+  $('#tD').html("0.720-0.651");
+  $('#tE').html("&#8804; 0.650");
 
   $("#datadesc").html("Species evenness describes the distribution of relative species in a particular plot section. Evenness ranges from 0-1, with 0 meaning there is no evenness and 1 meaning complete evenness. Complete evenness is where all species share the same relative proportion.");
   $('.color').css('visibility', 'visible');
@@ -115,19 +113,19 @@ $('#evennessButton').click(function(){
 $('#diversityButton').click(function(){
 clicked = true;
     $(pathlist).each(function() {
-    if ($(this).attr('diversity') > 2.089) {
+    if ($(this).attr('diversity') > 2.200) {
       $(this).css('fill', diversityA);
       $(this).css('fill-opacity', 1);
     }
-    else if ($(this).attr('diversity') > 1.890) {
+    else if ($(this).attr('diversity') > 2) {
       $(this).css('fill', diversityB);
       $(this).css('fill-opacity', 1);
     }
-    else if ($(this).attr('diversity') > 1.685) {
+    else if ($(this).attr('diversity') > 1.85) {
       $(this).css('fill', diversityC);
       $(this).css('fill-opacity', 1);
     }
-    else if ($(this).attr('diversity') > 1.467) {
+    else if ($(this).attr('diversity') > 1.75) {
       $(this).css('fill', diversityD);
       $(this).css('fill-opacity', 1);
     }
@@ -143,11 +141,11 @@ clicked = true;
   $('#cD').attr("src", 'assets/dD.png');
   $('#cE').attr("src", 'assets/dE.png');
 
-  $('#tA').html("2.309-2.090");
-  $('#tB').html("2.089-1.891");
-  $('#tC').html("1.890-1.686");
-  $('#tD').html("1.685-1.468");
-  $('#tE').html("1.467-1.258");
+  $('#tA').html("&gt; 2.200");
+  $('#tB').html("2.200-2.001");
+  $('#tC').html("2.000-1.851");
+  $('#tD').html("1.850-1.751");
+  $('#tE').html("&#8804; 1.750");
 
   $("#datadesc").html("The Shannon Diversity Index describes the diversity of species in a particular plot section. It combines species richness and evenness. The higher the index value is, the more diverse a community is.");
 
